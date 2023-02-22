@@ -6,7 +6,7 @@ RSpec.describe Car do
     car = Car.new("Ford Mustang", 1500, 36)
 
     expect(car).to be_a Car
-  end
+  
 
   it 'has a make' do
     car = Car.new("Ford Mustang", 1500, 36)
