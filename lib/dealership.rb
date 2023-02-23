@@ -32,9 +32,18 @@ class Dealership
 
     def cars_by_make(make)
         @inventory.find_all do |car|
-            car.make == make
-
-                
+            car.make == make       
         end
+    end
+
+    def total_value
+        @inventory.sum do |car|
+            car.monthly_payment * car.loan_length
+        # require 'pry'; binding.pry
+        end  
+    end
+
+    def details
+        {"address" => @address, "total_value" => total_value}
     end
 end
