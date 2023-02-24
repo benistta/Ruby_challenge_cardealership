@@ -191,7 +191,6 @@ pry(main)> dealership.average_price_of_car
 
 pry(main)> dealership.cars_sorted_by_price
 #=> [#<Car:0x00007fccd383c2d0...>, #<Car:0x00007fccd297dc30...>, #<Car:0x00007fccd2985f48...>, #<Car:0x00007fccd29b5720...>]
-
 pry(main)> dealership.inventory_hash
 #=> {"Ford"=> [#<Car:0x00007fccd29b5720...>],
 "Toyota"=> [#<Car:0x00007fccd2985f48...>, #<Car:0x00007fccd383c2d0...>],
