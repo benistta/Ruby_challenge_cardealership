@@ -64,4 +64,12 @@ class Dealership
         # require 'pry'; binding.pry
         end
     end
+
+    def inventory_hash 
+        result = {}
+        @inventory.each do |car|
+            result[car.make] = cars_by_make(car.make)
+        end
+        result
+    end
 end
